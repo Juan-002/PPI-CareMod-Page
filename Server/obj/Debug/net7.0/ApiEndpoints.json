@@ -2,24 +2,19 @@
   {
     "ContainingType": "CareMod.Server.Controllers.EditarController",
     "Method": "PutPaciente",
-    "RelativePath": "api/Editar/tb_pacientes({persona})",
+    "RelativePath": "api/Editar/tb_pacientes({documento_paciente})",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "rh",
+        "Name": "documento_paciente",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "pacientes",
         "Type": "CareMod.Shared.Pacientes",
-        "IsRequired": true
-      },
-      {
-        "Name": "persona",
-        "Type": "",
         "IsRequired": true
       }
     ],
@@ -27,7 +22,7 @@
   },
   {
     "ContainingType": "CareMod.Server.Controllers.InsertarController",
-    "Method": "PostPersona",
+    "Method": "PostPaciente",
     "RelativePath": "api/Insertar/InsertarPaciente",
     "HttpMethod": "POST",
     "IsController": true,

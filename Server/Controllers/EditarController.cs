@@ -15,17 +15,17 @@ namespace CareMod.Server.Controllers
             _IEditarRepositorio = editarRepositorio;
         }
 
-        [HttpPut("tb_pacientes({persona})")]
-        public async Task<IActionResult> PutPaciente([FromRoute] String rh, [FromBody] Pacientes pacientes)
+        [HttpPut("tb_pacientes({documento_paciente})")]
+        public async Task<IActionResult> PutPaciente([FromRoute] String documento_paciente, [FromBody] Pacientes pacientes)
         {
-            if (pacientes == null || rh != "")
+            if (pacientes == null || documento_paciente != "")
             {
                 return BadRequest();
             }
 
 
-            if (string.IsNullOrEmpty(pacientes.RH))
-                ModelState.AddModelError("rh", "Primer Apellido no puede estar en blanco");
+            if (string.IsNullOrEmpty(pacientes.documento_paciente))
+                ModelState.AddModelError("documento_paciente", "Primer Apellido no puede estar en blanco");
 
            /* if (string.IsNullOrEmpty(pacientes.EPS.ToString()))
                 ModelState.AddModelError("eps", "eps no puede estar en blanco");
@@ -46,7 +46,7 @@ namespace CareMod.Server.Controllers
             {
                 return BadRequest(ModelState);
             }
-            pacientes.RH = rh;
+            pacientes.documento_paciente = documento_paciente;
 
             var result = await _IEditarRepositorio.EditarPaciente(pacientes);
 

@@ -19,10 +19,10 @@ namespace CareMod.Client.Services
                var result  =  await _httpClient.GetFromJsonAsync<IEnumerable<Pacientes>>($"api/Seleccionar/Pacientes");
                 return result;
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                throw;
+                throw(e);
             }
         }
 

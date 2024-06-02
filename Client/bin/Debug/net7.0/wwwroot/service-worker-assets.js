@@ -929,23 +929,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Cpt6HSdZ1QiDhpMCyuO8oS9MUTjc7yowmipk+0O\/ztA=",
+      "hash": "sha256-5YXKyQfwahSVDVQgiirKiKGOoPJzs0pOY6gfOv2ulWs=",
       "url": "_framework\/CareMod.Shared.dll"
     },
     {
-      "hash": "sha256-V4Va4O7Psuy6EpZUjDEJCpeN7QVkuWI0K+7xrbBAGRc=",
+      "hash": "sha256-13kvqSyJp+xiIhrzq8X\/cHJalMqmoixC0EI7X5jHtcQ=",
       "url": "_framework\/CareMod.Shared.pdb"
     },
     {
-      "hash": "sha256-KEAwJur1W4GgdJqMFoBuyEh7VGT4Q3ZRpOikQhH2mB0=",
+      "hash": "sha256-cR22o9M7fIBgt3DcBQ7+OOHdQqhTSE+jNPttJ1uXz3w=",
       "url": "_framework\/CareMod.Client.dll"
     },
     {
-      "hash": "sha256-A0NXFvSORgGyVoFdYU6T\/MuID4ecwCR0en61Ae4C+Y4=",
+      "hash": "sha256-7UvsMHg1cC1a5X\/q3x3uMvqSSQ7c2wQbgPNgt7T4h6U=",
       "url": "_framework\/CareMod.Client.pdb"
     },
     {
-      "hash": "sha256-+SDdWdJQsp0CJrkCzOne8wson8ELVKcxdD5BNk0qX3g=",
+      "hash": "sha256-dMPBMmxzm901iPKXvn\/BfA8iJvrzVZKJAVK6YX1e+oE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1129,5 +1129,5 @@
       "url": "_content\/Blazorise.Icons.Material\/blazorise.icons.material.css"
     }
   ],
-  "version": "LpiiJknb"
+  "version": "2m3ulUck"
 };

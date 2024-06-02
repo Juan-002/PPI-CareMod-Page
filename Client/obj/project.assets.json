@@ -2968,11 +2968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PPI_2024_1\\pagina\\CareMod\\Client\\CareMod.Client.csproj",
+      "projectUniqueName": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\CareMod.Client.csproj",
       "projectName": "CareMod.Client",
-      "projectPath": "C:\\PPI_2024_1\\pagina\\CareMod\\Client\\CareMod.Client.csproj",
+      "projectPath": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\CareMod.Client.csproj",
       "packagesPath": "C:\\Users\\juan0\\.nuget\\packages\\",
-      "outputPath": "C:\\PPI_2024_1\\pagina\\CareMod\\Client\\obj\\",
+      "outputPath": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2994,8 +2994,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\PPI_2024_1\\pagina\\CareMod\\Shared\\CareMod.Shared.csproj": {
-              "projectPath": "C:\\PPI_2024_1\\pagina\\CareMod\\Shared\\CareMod.Shared.csproj"
+            "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\CareMod.Shared.csproj": {
+              "projectPath": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\CareMod.Shared.csproj"
             }
           }
         }

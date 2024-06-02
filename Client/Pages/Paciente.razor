@@ -7,15 +7,156 @@
 @using Microsoft.AspNetCore.Authorization;
 @attribute [Authorize(Roles = "Administrador")]
 
+
+<!-- Botón para abrir el modal -->
+<button type="button" class="btn btn-primary" @onclick="OpenModal">
+    Nuevo Paciente
+</button>
+
+<!-- Modal -->
+<div class="modal fade @modalClass" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:@(modalVisible ? "block" : "none");">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Ingresar Datos del Paciente</h5>
+                <button type="button" class="close" aria-label="Close" @onclick="CloseModal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <EditForm Model="@nuevoPaciente" OnValidSubmit="InsertarPaciente">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+
+                    <!-- Campos del formulario -->
+                    <div class="form-group">
+                        <label>Documento del Paciente: </label>
+                        <InputText @bind-Value="nuevoPaciente.documento_paciente" class="form-control" id="documentoPaciente" />
+                        <ValidationMessage For="@(() => nuevoPaciente.documento_paciente)" />
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Documento: </label>
+                        <InputSelect @bind-Value="nuevoPaciente.tipo_documento" class="form-control" id="tipoDocumento">
+                            <option value="CC">CC</option>
+                            <option value="TI">TI</option>
+                            <option value="RC">RC</option>
+                        </InputSelect>
+                        <ValidationMessage For="@(() => nuevoPaciente.tipo_documento)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="primerNombre">Primer Nombre</label>
+                        <InputText @bind-Value="nuevoPaciente.primer_nombre" class="form-control" id="primerNombre" />
+                        <ValidationMessage For="@(() => nuevoPaciente.primer_nombre)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="segundoNombre">Segundo Nombre</label>
+                        <InputText @bind-Value="nuevoPaciente.segundo_nombre" class="form-control" id="segundoNombre" />
+                        <ValidationMessage For="@(() => nuevoPaciente.segundo_nombre)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="primerApellido">Primer Apellido</label>
+                        <InputText @bind-Value="nuevoPaciente.primer_apellido" class="form-control" id="primerApellido" />
+                        <ValidationMessage For="@(() => nuevoPaciente.primer_apellido)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="segundoApellido">Segundo Apellido</label>
+                        <InputText @bind-Value="nuevoPaciente.segundo_apellido" class="form-control" id="segundoApellido" />
+                        <ValidationMessage For="@(() => nuevoPaciente.segundo_apellido)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                        <InputDate @bind-Value="nuevoPaciente.fecha_de_nacimiento" class="form-control" id="fechaNacimiento" min="1901-01-01" />
+                        <ValidationMessage For="@(() => nuevoPaciente.fecha_de_nacimiento)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="rh">RH</label>
+                        <InputText @bind-Value="nuevoPaciente.RH" class="form-control" id="rh" />
+                        <ValidationMessage For="@(() => nuevoPaciente.RH)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="eps">EPS</label>
+                        <InputNumber @bind-Value="nuevoPaciente.eps" class="form-control" id="eps" />
+                        <ValidationMessage For="@(() => nuevoPaciente.eps)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoUsuario">Tipo de Usuario</label>
+                        <InputText @bind-Value="nuevoPaciente.tipo_de_usuario" class="form-control" id="tipoUsuario" />
+                        <ValidationMessage For="@(() => nuevoPaciente.tipo_de_usuario)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección de Residencia</label>
+                        <InputText @bind-Value="nuevoPaciente.residencia" class="form-control" id="direccion" />
+                        <ValidationMessage For="@(() => nuevoPaciente.residencia)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="religion">Religión</label>
+                        <InputNumber @bind-Value="nuevoPaciente.religion" class="form-control" id="religion" />
+                        <ValidationMessage For="@(() => nuevoPaciente.religion)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="documentoAcompanante">Documento del Acompañante</label>
+                        <InputText @bind-Value="nuevoPaciente.id_acompanniante" class="form-control" id="documentoAcompanante" />
+                        <ValidationMessage For="@(() => nuevoPaciente.id_acompanniante)" />
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <InputSelect @bind-Value="nuevoPaciente.estatus_ac_noac" class="form-control" id="estado">
+                            <option value=true>Activo</option>
+                            <option value=false>No Activo</option>
+                        </InputSelect>
+
+                        <input type="hidden" @bind-value="nuevoPaciente.fecha_creacion" />
+                        <input type="hidden" @bind-value="nuevoPaciente.fecha_edicion" />
+
+
+                    </div>
+                    <div class="form-group">                                             
+                        <label for="alertas">Alertas del Paciente</label>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" @bind="nuevoPaciente.amarillo" />
+                            <label class="form-check-label" for="alertaAmarillo">Amarillo</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" @bind="nuevoPaciente.rojo" />
+                            <label class="form-check-label" for="alertaRojo">Rojo</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" @bind="nuevoPaciente.ciam" />
+                            <label class="form-check-label" for="alertaCian">Cian</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" @bind="nuevoPaciente.morado" />
+                            <label class="form-check-label" for="alertaMorado">Morado</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" @bind="nuevoPaciente.verde" />
+                            <label class="form-check-label" for="alertaVerde">Verde</label>
+                        </div> 
+
+                    </div>
+                </EditForm>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" @onclick="CloseModal">Cerrar</button>
+                <button type="submit" class="btn btn-primary" @onclick="InsertarPaciente">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+
 @if (pacientes != null && pacientes.Any())
 {
     <h4>pacientes</h4>
+   
     <table class="table">
         <thead>
             <tr>
                 <th>Documento</th>
-                <th>Nombre Completo</th>
                 <th>Tipo de documento</th>
+                <th>Nombre Completo</th>
                 <th>Fecha de nacimiento</th>
                 <th>RH</th>
                 <th>EPS</th>
@@ -25,7 +166,7 @@
                 <th>Estatus</th>
                 <th>Creacion</th>
                 <th>Edicion</th>
-                <th>Alertas</th>
+                <!--<th>Alertas</th>-->
 
 
             </tr>
@@ -34,9 +175,43 @@
             @foreach (var paciente in pacientes)
             {
                 <tr>
-                    <td>@paciente.RH</td>
+                    <td>@paciente.documento_paciente</td>
+                    <td>@paciente.tipo_documento</td>
+                    <td>@paciente.primer_nombre  @paciente.segundo_nombre  @paciente.primer_apellido  @paciente.segundo_apellido </td>
+                    <td>@paciente.fecha_de_nacimiento</td>
+                    <td>@paciente.RH</td> 
                     <td>
-                    
+                        @{
+                            string epsNombre = "";
+                            if (paciente.eps == 1) { epsNombre = "Sura";}
+                            else if (paciente.eps == 2){ epsNombre = "Medimax"; }
+                        } @epsNombre
+                    </td>
+
+                    <td>@paciente.tipo_de_usuario </td>
+                    <td>@paciente.residencia </td>
+
+                    <td>
+                        @{
+                            string religionNombre = "";
+                            if (paciente.religion == 1) {religionNombre = "Testigo de Jeova";}
+                            else if (paciente.religion == 2) { religionNombre = "Catolico"; }
+                        }      @religionNombre
+                    </td>
+
+                    <td>
+                        @{
+                            string estatus = "";
+                            if(paciente.estatus_ac_noac == true){ estatus = "Activo"; }
+                            else if(paciente.estatus_ac_noac == false){estatus = "Inactivo"; }
+                            @estatus
+                        } 
+                    </td>
+                    <td>@paciente.fecha_creacion </td>
+                    <td>@paciente.fecha_edicion </td>
+                    @*<td>@paciente.id_alerta </td>*@
+                    <td>
+                         <button  @onclick= "() => EditarPaciente(paciente)" class="btn btn-primary" >Editar</button>
                     </td>
                 </tr>
             }
@@ -48,6 +223,13 @@ else
     <p>No hay Usuarios registrados.</p>
 }
 
+@if (!string.IsNullOrEmpty(mensaje))
+{
+    <div class="alert alert-@tipoMensaje" role="alert">
+        @mensaje
+    </div>
+}
+
 @code {
 
     private List<Pacientes> pacientes;
@@ -55,6 +237,8 @@ else
     private string mensaje;
     private string tipoMensaje;
     private bool esEdicion;
+    private bool modalVisible = false;
+    private string modalClass = "";
 
 
     // Llamar al método de llenado del grid en el ciclo de vida de la página
@@ -80,12 +264,13 @@ else
         }
     }
 
-     private async Task EditarPaciente(Pacientes pacientes)
+    private async Task EditarPaciente(Pacientes pacientes)
     {
         try
         {
             esEdicion = true;
             nuevoPaciente = pacientes;
+            OpenModal();
 
         }
         catch (Exception ex)
@@ -96,6 +281,54 @@ else
 
         }
 
+    }
+
+
+    private async Task InsertarPaciente()
+    {
+        try
+        {
+            if (esEdicion)
+            {
+                await EditarDatosServicio.EditarPaciente(nuevoPaciente);
+                LimpiarFormulario();
+                mensaje = "Paciente insertado correctamente";
+                tipoMensaje = "success";
+                CloseModal();
+                esEdicion = false;
+            }
+            else
+            {
+                await InsertarDatosServicio.InsertarPaciente(nuevoPaciente);
+                LimpiarFormulario();
+                Console.WriteLine(nuevoPaciente);
+                CloseModal();
+                mensaje = "Persona insertada correctamente";
+                tipoMensaje = "success";
+
+            }
+
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"PArece que hay un Error Al insertar el Paciente: {ex.Message}");
+            mensaje = "Error al insertar la persona";
+            tipoMensaje = "error";
+        }
+
+    }
+   private void OpenModal()
+    {
+        modalVisible = true;
+        modalClass = "show";
+        StateHasChanged();
+    }
+    private void CloseModal()
+    {
+        modalVisible = false;
+        modalClass = "";
+        StateHasChanged();
     }
 
     private void LimpiarFormulario()

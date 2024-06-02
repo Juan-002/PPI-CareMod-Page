@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareMod.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a6665cbe71d0dc62064ef9814eb82fd76ce0b58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99dbc3b3909aff5bcfeed5002e8453779c9c4e21")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareMod.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareMod.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

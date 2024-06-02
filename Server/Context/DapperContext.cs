@@ -1,6 +1,7 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System.Data;
 using System.Data.OracleClient;
+using Oracle.ManagedDataAccess.Types;
 
 namespace CareMod.Server.Context
 {

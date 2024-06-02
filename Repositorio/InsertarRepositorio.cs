@@ -19,22 +19,44 @@ namespace Repositorio
         }
 
         /// <summary>
-        /// Inserta una nueva raza en la base de datos.
+        /// Inserta una nuevo paciente en la base de datos.
         /// </summary>
-        /// <param name="pacientes">La instancia de la clase Razas que contiene la información de la raza a insertar.</param>
+        /// <param name="pacientes">La instancia de la clase Personas que contiene la información de la raza a insertar.</param>
         /// <returns>Devuelve true si la inserción fue exitosa, de lo contrario, false.</returns>
         public async Task<bool> InsertarPaciente(Pacientes pacientes)
         {
             try
             {
-                string sql = "InsertarPaciente";
-
+                string sql = @"
+                INSERT INTO tb_pacientes
+                (documento_paciente, tipo_documento, primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, fecha_de_nacimiento, rh, eps, tipo_de_usuario, residencia, religion, id_acompanniante, estatus_ac_noac, fecha_creacion, fecha_edicion, amarillo, rojo, ciam, morado, verde) 
+                VALUES (:documento_paciente, :tipo_documento, :primer_nombre, :segundo_nombre, :primer_apellido, :segundo_apellido, :fecha_de_nacimiento, :RH, :eps, :tipo_de_usuario, :residencia, :religion, :id_acompanniante, :estatus_ac_noac, :fecha_creacion, :fecha_edicion, :amarillo, :rojo, :ciam, :morado, :verde)
+                ";
                 var resulttado = await _dbconnection.ExecuteAsync(sql, new
                 {
+                    pacientes.documento_paciente,
+                    pacientes.tipo_documento,
+                    pacientes.primer_nombre,
+                    pacientes.segundo_nombre,
+                    pacientes.primer_apellido,
+                    pacientes.segundo_apellido,
+                    pacientes.fecha_de_nacimiento,
                     pacientes.RH,
+                    pacientes.eps,
+                    pacientes.tipo_de_usuario,
+                    pacientes.residencia,
+                    pacientes.religion,
+                    pacientes.id_acompanniante,
+                    estatus_ac_noac=pacientes.estatus_ac_noac ? 1 : 0,
+                    pacientes.fecha_creacion,
+                    pacientes.fecha_edicion,
+                    amarillo=pacientes.amarillo?1:0,
+                    rojo=pacientes.rojo ? 1 : 0,
+                    ciam = pacientes.ciam ? 1 : 0,
+                    morado = pacientes.morado ? 1 : 0,
+                    verde = pacientes.verde ? 1 : 0
 
-
-                }, null, 10, CommandType.StoredProcedure);
+                }, null, 10, CommandType.Text);
 
                 return resulttado > 0;
             }

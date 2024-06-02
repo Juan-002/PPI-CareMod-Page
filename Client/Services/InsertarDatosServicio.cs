@@ -20,13 +20,37 @@ namespace CareMod.Client.Services
                 {
                     throw new Exception($"ERROR: {data.Content.ToString}");
                 }
+                else
+                {
+                    Console.WriteLine("Hola mundo");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Console.WriteLine("Hola mundo"); // También puedes imprimir el mensaje aquí si prefieres.
                 throw;
             }
         }
+
+
+        /*      public async Task InsertarPaciente(Pacientes pacientes  )
+              {
+                  try
+                  {
+                      var data = await _httpClient.PostAsJsonAsync($"api/Insertar/InsertarPaciente", pacientes);
+                      if (!data.IsSuccessStatusCode)
+                      {
+
+                          throw new Exception($"ERROR: {data.Content.ToString}");
+
+                      }
+                  }
+                  catch (Exception)
+                  {
+
+                      throw;
+                  }
+              } */
 
         public async Task InsertarEmpleado(EmpleadosDTO empleadosDTO)
         {

@@ -1,5 +1,6 @@
 ﻿using CareMod.Shared;
 using Dapper;
+using Devart.Data.Oracle;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -24,18 +25,61 @@ namespace Repositorio
         /// </summary>
         /// <returns>Una colección de objetos pacientes.</returns>
         /// 
+
+        /* public async Task<IEnumerable<Pacientes>> GetPacientes()
+             {
+                 try
+                 {
+                     var sql = @"
+                  SELECT 
+                     p.persona.documento AS Documento,
+                     p.persona.tipo_documento AS TipoDocumento,
+                     p.persona.primer_nombre AS PrimerNombre,
+                     p.persona.segundo_nombre AS SegundoNombre,
+                     p.persona.primer_apellido AS PrimerApellido,
+                     p.persona.segundo_apellido AS SegundoApellido,
+                     p.persona.fecha_nacimiento AS FechaNacimiento,
+                     p.RH AS RH,
+                     p.eps AS eps,
+                     p.tipo_de_usuario AS tipo_de_usuario,
+                     p.residencia AS residencia,
+                     p.religion AS religion,
+                     p.estatus_ac_noac AS estatus_ac_noac,
+                     p.fecha_creacion AS fecha_creacion,
+                     p.fecha_edicion AS fecha_edicion
+                 FROM 
+                     tb_pacientes p";
+
+          var pacientes = await _dbconnection.QueryAsync<Pacientes, Objeto_Personas, Pacientes>(
+              sql,
+              (paciente, persona) =>
+              {
+                  paciente.Persona = persona;
+                  return paciente;
+              },
+             splitOn: "Documento").First();
+                         //commandType: CommandType.Text);
+                     return pacientes;
+                 }
+                 catch (Exception ex)
+                 {
+                     throw;
+                 }
+             } */
+
+
         public async Task<IEnumerable<Pacientes>> GetPacientes()
         {
             try
             {
-                var sql = "SELECT * FROM TB_PACIENTES";
+                var sql = "SELECT * FROM tb_pacientes";
                 return await _dbconnection.QueryAsync<Pacientes>(sql, commandType: CommandType.Text);
             }
             catch (Exception)
             {
                 throw;
             }
-         } 
+        }
 
         /// <summary>
         /// Obtiene todos los empleados almacenados en la base de datos.

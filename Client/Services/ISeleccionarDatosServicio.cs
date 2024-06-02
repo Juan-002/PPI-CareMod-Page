@@ -7,8 +7,8 @@ namespace CareMod.Client.Services
         Task<IEnumerable<Pacientes>> GetAllPacientes();
         Task<IEnumerable<EmpleadosDTO>> GetAllEmpleados();
         Task<IEnumerable<Registro_ocupacionesDTO>> GetAllRegistro_ocupacione();
-        Task<Pacientes> GetPacientePorNombre(string persona);
-        Task<EmpleadosDTO> GetEmpleadosDTOPorNombre(string persona);
+        //Task<Pacientes> GetPacientePorNombre(string persona);
+        //Task<EmpleadosDTO> GetEmpleadosDTOPorNombre(string persona);
         Task<EmpleadosDTO> GetEmpleadosDTOPorNombre_usuario(string nombre_usuario);
     }
 }

@@ -1,7 +1,7 @@
 {
   "entryAssembly": "CareMod.Client",
   "resources": {
-    "hash": "sha256-HtmkzsAtrOpTwCtfwDCEfE068Hgvvzw/RfOY45CfZuE=",
+    "hash": "sha256-ARjVQlD00D13UFXxE9scOTknSukowFWOgUmfJrhtq6w=",
     "runtime": {
       "dotnet.7.0.16.4p9n9emvkc.js": "sha256-4BiArKugJJtpQrznGF5zWfmJ2TB98+p6rKsyoqhtMk4=",
       "dotnet.timezones.blat": "sha256-rwyJqJu36keQwNmm/O1XV7tnkkVldIOK8GIjn4gTUt4=",
@@ -218,12 +218,12 @@
       "mscorlib.dll": "sha256-7yxnoj0sx/xIMKjSCkfYzaeQKDj1UsUSr/JXW7fRggs=",
       "netstandard.dll": "sha256-c9xgB5oQro5/rBTTHeD+4cqLi9QOB+6fhaP3jmkeGo4=",
       "System.Private.CoreLib.dll": "sha256-FGXoQzMt7mcWfUZbWXoXgg8tPIt7PF+QZoXXBQWegAQ=",
-      "CareMod.Shared.dll": "sha256-Cpt6HSdZ1QiDhpMCyuO8oS9MUTjc7yowmipk+0O/ztA=",
-      "CareMod.Client.dll": "sha256-7OXrKXlu5IALeh7KdJH2sHK5wPvaPio4QEs4ZOYKxRE="
+      "CareMod.Shared.dll": "sha256-5YXKyQfwahSVDVQgiirKiKGOoPJzs0pOY6gfOv2ulWs=",
+      "CareMod.Client.dll": "sha256-QrK4AoDZqxvEYvMZ5TdJavoUQnOAvmRhuSo8RTZMaHg="
     },
     "pdb": {
-      "CareMod.Shared.pdb": "sha256-V4Va4O7Psuy6EpZUjDEJCpeN7QVkuWI0K+7xrbBAGRc=",
-      "CareMod.Client.pdb": "sha256-7m3PtS1Ljd4Am91KfJ5jZuiHuLmP8JwKSedLl3xv9Vo="
+      "CareMod.Shared.pdb": "sha256-13kvqSyJp+xiIhrzq8X/cHJalMqmoixC0EI7X5jHtcQ=",
+      "CareMod.Client.pdb": "sha256-I+YQPQJG5K2MuGY6u9b+aboS6XfS6HEKxGqWPG/ZUCc="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

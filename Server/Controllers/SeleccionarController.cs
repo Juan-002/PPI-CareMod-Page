@@ -23,7 +23,17 @@ namespace CareMod.Server.Controllers
            
            public async Task<IEnumerable<Pacientes>> GetAllPacientes()
            {
+            try
+            {
+
                 return await _ISeleccionarRepositorio.GetPacientes();
+            }
+            catch (Exception e)
+            {
+
+                throw(e);
+            }
+               
            } 
         /*
         [HttpGet("Pacientes")]

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CareMod.Shared;
 using Repositorio;
+using Blazorise.Extensions;
 
 namespace CareMod.Server.Controllers
 {
@@ -18,16 +19,31 @@ namespace CareMod.Server.Controllers
 
 
         [HttpPost("InsertarPaciente")]
-        public async Task<IActionResult> PostPersona([FromBody] Pacientes pacientes)
+        public async Task<IActionResult> PostPaciente([FromBody] Pacientes pacientes)
         {
             if (pacientes == null)
             {
                 return BadRequest();
             }
 
+            if (string.IsNullOrEmpty(pacientes.documento_paciente))
+                ModelState.AddModelError("Dcumento", "Documento no puede estar en blanco");
+            if (string.IsNullOrEmpty(pacientes.tipo_documento))
+                ModelState.AddModelError("Tipo Documento", "Tipo de Documento no puede estar en blanco");
+            if (string.IsNullOrEmpty(pacientes.primer_nombre))
+                ModelState.AddModelError("Primer Nombre", "El primer Nombre no puede estar en blanco");
+            if (string.IsNullOrEmpty(pacientes.primer_apellido))
+                ModelState.AddModelError("Primer Apellido", "el Primer Apellido no puede estar en blanco");
             if (string.IsNullOrEmpty(pacientes.RH))
-                ModelState.AddModelError("RH", "Documento no puede estar en blanco");
-
+                ModelState.AddModelError("RH", "no puede estar en blanco");
+            if (string.IsNullOrEmpty(pacientes.tipo_de_usuario))
+                ModelState.AddModelError("Tipo de Usuario", "no puede estar en blanco");
+            if (string.IsNullOrEmpty(pacientes.residencia))
+                ModelState.AddModelError("Direccion", "no puede estar en blanco");
+            if (string.IsNullOrEmpty(pacientes.id_acompanniante))
+                ModelState.AddModelError("Documento del acompañante", "Documento no puede estar en blanco");
+           // if (amarillo == true) { pacientes.amarillo = 1; } else { pacientes.amarillo = 0; }
+            
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

@@ -9,25 +9,29 @@ using System.Threading.Tasks;
 namespace CareMod.Shared
 {
 
+
     public class Pacientes
     {
-        [Key]
-        [Column("RH")]
-        public string RH { get; set; }
-        /*[Column("EPS")]
-        public int   EPS { get; set; }
-        [Column("TIPO_DE_USUARIO")]
-        public string TIPO_DE_USUARIO { get; set; }
-        [Column("RESIDENCIA")]
-        public string RESIDENCIA { get; set; }
-        [Column("RELIGION")]
-        public int RELIGION { get; set; }
-        [Column("ESTATUS_AC_NOAC")]
-        public bool? ESTATUS_AC_NOAC { get; set; }
-        [Column("FECHA_CREACION")]
-        public string FECHA_CREACION { get; set; }
-        [Column("FECHA_EDICION")]
-        public string FECHA_EDICION { get; set; }
-        */
+        public string       documento_paciente { get; set; }
+        public string       tipo_documento { get; set; }
+        public string       primer_nombre { get; set; }
+        public string?      segundo_nombre { get; set; }
+        public string       primer_apellido { get; set; }
+        public string?      segundo_apellido { get; set; }
+        public DateTime     fecha_de_nacimiento { get; set; }
+        public string       RH { get; set; }
+        public int          eps { get; set; }
+        public string       tipo_de_usuario { get; set; }
+        public string       residencia { get; set; }
+        public int          religion { get; set; }
+        public string       id_acompanniante { get; set; }
+        public bool        estatus_ac_noac { get; set; }
+        public string?     fecha_creacion { get; set; }
+        public string?      fecha_edicion { get; set; }
+        public bool         amarillo { get; set; }
+        public bool         rojo { get; set; }
+        public bool         ciam { get; set; }
+        public bool         morado { get; set; }
+        public bool         verde { get; set; }
     }
 }

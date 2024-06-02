@@ -16,7 +16,7 @@ namespace CareMod.Client.Services
         {
             try
             {
-                var data = await _httpClient.PutAsJsonAsync($"api/Editar/Paciente({pacientes.RH})", pacientes);
+                var data = await _httpClient.PutAsJsonAsync($"api/Editar/Paciente({pacientes.documento_paciente})", pacientes);
                 if (!data.IsSuccessStatusCode)
                 {
                     throw new Exception($"ERROR: {data.Content.ToString}");

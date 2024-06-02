@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lMcZCF/J6T05wDAmFzn4RBie9aYSogHKKpwWG4s8rBH9MvVYetzQM/9RNu+s71vQSAcFXV5OqszpVXcFNvYQfg==",
+  "dgSpecHash": "virZ9jbyZvnwArtKJbkd8p4KzeQkayP6/KqYkbESci0M60FRXRBdCh8Atv8zOfSD8vVZNKO+/HbgK6sja6sypQ==",
   "success": true,
-  "projectFilePath": "C:\\PPI_2024_1\\pagina\\CareMod\\Client\\CareMod.Client.csproj",
+  "projectFilePath": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\CareMod.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juan0\\.nuget\\packages\\blazored.sessionstorage\\2.3.0\\blazored.sessionstorage.2.3.0.nupkg.sha512",
     "C:\\Users\\juan0\\.nuget\\packages\\blazorise\\1.2.4\\blazorise.1.2.4.nupkg.sha512",
