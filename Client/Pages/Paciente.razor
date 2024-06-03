@@ -30,12 +30,12 @@
 
                     <!-- Campos del formulario -->
                     <div class="form-group">
-                        <label>Documento del Paciente: </label>
+                        <label>Documento del Paciente: <span style="color: red;">(*)</span> </label>
                         <InputText @bind-Value="nuevoPaciente.documento_paciente" class="form-control" id="documentoPaciente" />
                         <ValidationMessage For="@(() => nuevoPaciente.documento_paciente)" />
                     </div>
                     <div class="form-group">
-                        <label>Tipo de Documento: </label>
+                        <label>Tipo de Documento:<span style="color: red;">(*)</span> </label>
                         <InputSelect @bind-Value="nuevoPaciente.tipo_documento" class="form-control" id="tipoDocumento">
                             <option value="CC">CC</option>
                             <option value="TI">TI</option>
@@ -44,7 +44,7 @@
                         <ValidationMessage For="@(() => nuevoPaciente.tipo_documento)" />
                     </div>
                     <div class="form-group">
-                        <label for="primerNombre">Primer Nombre</label>
+                        <label for="primerNombre">Primer Nombre <span style="color: red;">(*)</span></label>
                         <InputText @bind-Value="nuevoPaciente.primer_nombre" class="form-control" id="primerNombre" />
                         <ValidationMessage For="@(() => nuevoPaciente.primer_nombre)" />
                     </div>
@@ -54,7 +54,7 @@
                         <ValidationMessage For="@(() => nuevoPaciente.segundo_nombre)" />
                     </div>
                     <div class="form-group">
-                        <label for="primerApellido">Primer Apellido</label>
+                        <label for="primerApellido">Primer Apellido <span style="color: red;">(*)</span></label>
                         <InputText @bind-Value="nuevoPaciente.primer_apellido" class="form-control" id="primerApellido" />
                         <ValidationMessage For="@(() => nuevoPaciente.primer_apellido)" />
                     </div>
@@ -64,42 +64,80 @@
                         <ValidationMessage For="@(() => nuevoPaciente.segundo_apellido)" />
                     </div>
                     <div class="form-group">
-                        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                        <label for="fechaNacimiento">Fecha de Nacimiento <span style="color: red;">(*)</span></label>
                         <InputDate @bind-Value="nuevoPaciente.fecha_de_nacimiento" class="form-control" id="fechaNacimiento" min="1901-01-01" />
                         <ValidationMessage For="@(() => nuevoPaciente.fecha_de_nacimiento)" />
                     </div>
                     <div class="form-group">
-                        <label for="rh">RH</label>
-                        <InputText @bind-Value="nuevoPaciente.RH" class="form-control" id="rh" />
-                        <ValidationMessage For="@(() => nuevoPaciente.RH)" />
+                        <label for="rh">RH <span style="color: red;">(*)</span></label>
+                        @*<InputText @bind-Value="nuevoPaciente.RH" class="form-control" id="rh" />
+                        <ValidationMessage For="@(() => nuevoPaciente.RH)" />*@
+                        <InputSelect @bind-Value="nuevoPaciente.RH" class="form-control" id="rh">
+                            <option value=A+>A+</option>
+                            <option value=A->A-</option>
+                            <option value=B+>B+</option>
+                            <option value=B->B-</option>
+                            <option value=AB+>AB+</option>
+                            <option value=AB->AB-</option>
+                            <option value=O+>O+</option>
+                            <option value=O->O-</option>
+                        </InputSelect>
+
                     </div>
                     <div class="form-group">
-                        <label for="eps">EPS</label>
-                        <InputNumber @bind-Value="nuevoPaciente.eps" class="form-control" id="eps" />
-                        <ValidationMessage For="@(() => nuevoPaciente.eps)" />
+                        <label for="eps">EPS <span style="color: red;">(*)</span></label>
+                        @*<InputNumber @bind-Value="nuevoPaciente.eps" class="form-control" id="eps" />
+                        <ValidationMessage For="@(() => nuevoPaciente.eps)" />*@
+
+                        <InputSelect @bind-Value="nuevoPaciente.eps" class="form-control" id="eps">
+                            <option value=1>Sura</option>
+                            <option value=2>Medimax</option>
+                            <option value=3>Anaswayuu</option>
+                            <option value=4->Asociación Indígena del Cauca</option>
+                            <option value=5>Eps Sanitas</option>
+                            <option value=6>Salud Total S.A.  E.P.S.</option>
+                        </InputSelect>
+
                     </div>
                     <div class="form-group">
-                        <label for="tipoUsuario">Tipo de Usuario</label>
-                        <InputText @bind-Value="nuevoPaciente.tipo_de_usuario" class="form-control" id="tipoUsuario" />
-                        <ValidationMessage For="@(() => nuevoPaciente.tipo_de_usuario)" />
+                        <label for="tipoUsuario">Tipo de Usuario <span style="color: red;">(*)</span></label>
+                       @*<InputText @bind-Value="nuevoPaciente.tipo_de_usuario" class="form-control" id="tipoUsuario" />
+                        <ValidationMessage For="@(() => nuevoPaciente.tipo_de_usuario)" />*@
+
+                        <InputSelect @bind-Value="nuevoPaciente.tipo_de_usuario" class="form-control" id="tipoUsuario">
+                            <option value=Contributivo>Contributivo</option>
+                            <option value=Subcidiado>Subcidiado</option>
+                            <option value=Particular>Particular</option>
+                        </InputSelect>
                     </div>
                     <div class="form-group">
-                        <label for="direccion">Dirección de Residencia</label>
+                        <label for="direccion">Dirección de Residencia <span style="color: red;">(*)</span></label>
                         <InputText @bind-Value="nuevoPaciente.residencia" class="form-control" id="direccion" />
                         <ValidationMessage For="@(() => nuevoPaciente.residencia)" />
                     </div>
                     <div class="form-group">
-                        <label for="religion">Religión</label>
-                        <InputNumber @bind-Value="nuevoPaciente.religion" class="form-control" id="religion" />
+                        <label for="religion">Religión <span style="color: red;">(*)</span></label>
+                       @*<InputNumber @bind-Value="nuevoPaciente.religion" class="form-control" id="religion" />
                         <ValidationMessage For="@(() => nuevoPaciente.religion)" />
+                        *@
+                        <InputSelect @bind-Value="nuevoPaciente.religion" class="form-control" id="religion">
+                            <option value=1>Testigo de jeova</option>
+                            <option value=2>Catolico</option>
+                            <option value=3>Adventista</option>
+                            <option value=4->Budista</option>
+                            <option value=5>Rasta</option>
+                            <option value=6>Indiferente</option>
+
+                        </InputSelect>
+
                     </div>
                     <div class="form-group">
-                        <label for="documentoAcompanante">Documento del Acompañante</label>
+                        <label for="documentoAcompanante">Documento del Acompañante <span style="color: red;">(*)</span></label>
                         <InputText @bind-Value="nuevoPaciente.id_acompanniante" class="form-control" id="documentoAcompanante" />
                         <ValidationMessage For="@(() => nuevoPaciente.id_acompanniante)" />
                     </div>
                     <div class="form-group">
-                        <label for="estado">Estado</label>
+                        <label for="estado">Estado <span style="color: red;">(*)</span></label>
                         <InputSelect @bind-Value="nuevoPaciente.estatus_ac_noac" class="form-control" id="estado">
                             <option value=true>Activo</option>
                             <option value=false>No Activo</option>
@@ -115,7 +153,7 @@
 
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" @bind="nuevoPaciente.amarillo" />
-                            <label class="form-check-label" for="alertaAmarillo">Amarillo</label>
+                            <label class="form-check-label" for="alertaAmarillo">Amarillo <span style="color: red;">(*)</span> </label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" @bind="nuevoPaciente.rojo" />
@@ -165,7 +203,7 @@
                 <th>Religion</th>
                 <th>Estatus</th>
                 <th>Creacion</th>
-                <th>Edicion</th>
+                <th>Ultima Edicion</th>
                 <!--<th>Alertas</th>-->
 
 

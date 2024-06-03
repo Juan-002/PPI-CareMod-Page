@@ -12,5 +12,7 @@ namespace Repositorio
         Task<bool> InsertarPaciente(Pacientes pacientes);
         Task<bool> InsertarEmpleado(EmpleadosDTO empleadosDTO);
         Task<bool> InsertarRegistro_ocupaciones(Registro_ocupacionesDTO registro_OcupacionesDTO);
+
+        Task<bool> Insertarlog(Auditorias auditorias);
     }
 }

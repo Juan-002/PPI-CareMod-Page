@@ -124,5 +124,34 @@ namespace Repositorio
             }
             finally { _dbconnection.Close(); }
         }
+
+
+        /// <summary>
+        /// Inserta una nueva especie en la base de datos.
+        /// </summary>
+        /// <param name="logs">La instancia de la clase Especies que contiene la información de la especie a insertar.</param>
+        /// <returns>Devuelve true si la inserción fue exitosa, de lo contrario, false.</returns>
+        public async Task<bool> Insertarlog(Auditorias auditorias)
+        {
+            try
+            {
+                string sql = @"INSERT INTO tb_auditorias(usuario,fecha,accion,detalle) VALUES (:usuario,:fecha,accion,:detalle);";
+
+                var resulttado = await _dbconnection.ExecuteAsync(sql, new
+                {
+                    usuario = auditorias.usuario,
+
+                }, null, 10, CommandType.Text);
+
+                return resulttado > 0;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally { _dbconnection.Close(); }
+        }
+
+
     }
 }

@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\client\\pages\\paciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|solutionrelative:client\\pages\\paciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E24508DD-2CBE-4736-8D61-47826B1D4B05}|Shared\\CareMod.Shared.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\shared\\pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E24508DD-2CBE-4736-8D61-47826B1D4B05}|Shared\\CareMod.Shared.csproj|solutionrelative:shared\\pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\repositorio\\seleccionarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\seleccionarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\repositorio\\insertarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\insertarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\client\\services\\iinsertardatosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|solutionrelative:client\\services\\iinsertardatosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\client\\services\\insertardatosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|solutionrelative:client\\services\\insertardatosservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E24508DD-2CBE-4736-8D61-47826B1D4B05}|Shared\\CareMod.Shared.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\shared\\auditorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E24508DD-2CBE-4736-8D61-47826B1D4B05}|Shared\\CareMod.Shared.csproj|solutionrelative:shared\\auditorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\repositorio\\iinsertarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\iinsertarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5905450-14D6-439C-A2D9-4CFBDA75122D}|Server\\CareMod.Server.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\server\\controllers\\insertarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5905450-14D6-439C-A2D9-4CFBDA75122D}|Server\\CareMod.Server.csproj|solutionrelative:server\\controllers\\insertarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\repositorio\\insertarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB81642C-638A-40FC-8489-D4BCB9C55081}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\insertarrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E24508DD-2CBE-4736-8D61-47826B1D4B05}|Shared\\CareMod.Shared.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\shared\\sesiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E24508DD-2CBE-4736-8D61-47826B1D4B05}|Shared\\CareMod.Shared.csproj|solutionrelative:shared\\sesiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|c:\\ppi_2024_1\\pagina\\ppi-caremod-page\\client\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D57BE3FF-7502-41CE-A064-374BD1A4F9E1}|Client\\CareMod.Client.csproj|solutionrelative:client\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeleccionarRepositorio.cs",
-              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\SeleccionarRepositorio.cs",
-              "RelativeDocumentMoniker": "Repositorio\\SeleccionarRepositorio.cs",
-              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\SeleccionarRepositorio.cs",
-              "RelativeToolTip": "Repositorio\\SeleccionarRepositorio.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAtwC8AAAAXAAAA",
+              "DocumentIndex": 3,
+              "Title": "SesionDTO.cs",
+              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\SesionDTO.cs",
+              "RelativeDocumentMoniker": "Shared\\SesionDTO.cs",
+              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\SesionDTO.cs",
+              "RelativeToolTip": "Shared\\SesionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T22:22:36.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pacientes.cs",
-              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\Pacientes.cs",
-              "RelativeDocumentMoniker": "Shared\\Pacientes.cs",
-              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\Pacientes.cs",
-              "RelativeToolTip": "Shared\\Pacientes.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAMwB0AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T16:26:41.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InsertarController.cs",
-              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Server\\Controllers\\InsertarController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\InsertarController.cs",
-              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Server\\Controllers\\InsertarController.cs",
-              "RelativeToolTip": "Server\\Controllers\\InsertarController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBUAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T23:57:48.544Z",
+              "WhenOpened": "2024-06-02T16:49:38.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Paciente.razor",
-              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Pages\\Paciente.razor",
-              "RelativeDocumentMoniker": "Client\\Pages\\Paciente.razor",
-              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Pages\\Paciente.razor",
-              "RelativeToolTip": "Client\\Pages\\Paciente.razor",
-              "ViewState": "AQIAABgBAAAAAAAAAAAtwCcBAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T00:06:21.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InsertarDatosServicio.cs",
-              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Services\\InsertarDatosServicio.cs",
-              "RelativeDocumentMoniker": "Client\\Services\\InsertarDatosServicio.cs",
-              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Services\\InsertarDatosServicio.cs",
-              "RelativeToolTip": "Client\\Services\\InsertarDatosServicio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABiAAAA",
+              "Title": "Auditorias.cs",
+              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\Auditorias.cs",
+              "RelativeDocumentMoniker": "Shared\\Auditorias.cs",
+              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Shared\\Auditorias.cs",
+              "RelativeToolTip": "Shared\\Auditorias.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T23:57:53.805Z",
+              "WhenOpened": "2024-06-02T16:49:30.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IInsertarDatosServicio.cs",
-              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Services\\IInsertarDatosServicio.cs",
-              "RelativeDocumentMoniker": "Client\\Services\\IInsertarDatosServicio.cs",
-              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Services\\IInsertarDatosServicio.cs",
-              "RelativeToolTip": "Client\\Services\\IInsertarDatosServicio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T23:57:54.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InsertarRepositorio.cs",
-              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\InsertarRepositorio.cs",
-              "RelativeDocumentMoniker": "Repositorio\\InsertarRepositorio.cs",
-              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\InsertarRepositorio.cs",
-              "RelativeToolTip": "Repositorio\\InsertarRepositorio.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAtwDIAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T23:57:42.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "IInsertarRepositorio.cs",
               "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\IInsertarRepositorio.cs",
               "RelativeDocumentMoniker": "Repositorio\\IInsertarRepositorio.cs",
               "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\IInsertarRepositorio.cs",
               "RelativeToolTip": "Repositorio\\IInsertarRepositorio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T23:57:43.148Z",
+              "WhenOpened": "2024-06-02T16:46:36.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InsertarRepositorio.cs",
+              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\InsertarRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositorio\\InsertarRepositorio.cs",
+              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Repositorio\\InsertarRepositorio.cs",
+              "RelativeToolTip": "Repositorio\\InsertarRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T16:33:15.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\Login.razor",
+              "ToolTip": "C:\\PPI_2024_1\\pagina\\PPI-CareMod-Page\\Client\\Pages\\Login.razor",
+              "RelativeToolTip": "Client\\Pages\\Login.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T16:32:38.837Z",
               "EditorCaption": ""
             }
           ]
